@@ -1,0 +1,72 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1% 1fr 1fr 1fr 1%;
+    grid-template-rows: 1fr 0.6fr 3fr 3fr 1fr;
+    grid-template-areas:
+    ". header header header ."
+    ". nav nav nav ."
+    ". aside main1 main2 ."
+    ". aside main3 main3 ."
+    ". footer footer footer .";
+}
+header{
+    grid-area: header;
+    background-color: brown;
+}
+nav{
+    grid-area: nav;
+    background-color: blue;
+}
+aside{
+    grid-area: aside;
+    background-color: black;
+}
+main{
+    grid-area: main1;
+    background-color: yellow;
+}
+#sectionmain{
+    grid-area: main2;
+    background-color: greenyellow;
+}
+#sectionmaintwo{
+    grid-area: main3;
+    background-color: blueviolet;
+}
+footer{
+    grid-area: footer;
+    background-color: aqua;
+}
+@media (max-width:500px){
+    .container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1% 1fr 1%;
+        grid-auto-rows: auto;
+        grid-template-areas:
+        ". header ."
+        ". nav ."
+        ". main ."
+        ". aisde ."
+        ". aside2 ."
+        ". footer .";
+    }
+    header{
+        background-color: darkblue;
+    }
+    nav{
+        background-color: aquamarine;
+    }
+    main{
+        background-color: blue;
+    }
+    aside{
+        background-color: blue;
+    }
+    #asidetwo{
+        grid-area: aside2;
+        background-color: brown;
+    }
+
+}
