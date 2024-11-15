@@ -1,3 +1,4 @@
+@import "color.css";
 .container{
     display: grid;
     height: 100vh;
@@ -7,66 +8,83 @@
     ". header header header ."
     ". nav nav nav ."
     ". aside main1 main2 ."
-    ". aside main3 main3 ."
+    ". aside2 main3 main3 ."
     ". footer footer footer .";
 }
 header{
     grid-area: header;
-    background-color: brown;
+    background-color: var(--primary-color);
+    font-size: 50px;
+    text-align: center;
+    color: var(--text-color);
 }
 nav{
     grid-area: nav;
-    background-color: blue;
+    background-color: var(--accent-color);
 }
 aside{
     grid-area: aside;
-    background-color: black;
+    background-color: var(--secondary-color);
 }
-main{
+#asidetwo{
+    grid-area: aside2;
+    background-color:  var(--secondary-color);
+}
+#mainone{
     grid-area: main1;
-    background-color: yellow;
+    background-color: var(--extra-color);
 }
 #sectionmain{
     grid-area: main2;
-    background-color: greenyellow;
+    background-color: var(--extra-color);
 }
 #sectionmaintwo{
     grid-area: main3;
-    background-color: blueviolet;
+    background-color: var(--extra-color);
 }
 footer{
     grid-area: footer;
-    background-color: aqua;
+    background-color: var(--footer-color);
+}
+.navbar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar a{
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar li{
+    float: left;
+    font-size: 50px;
+    padding-left: 60px;
+}
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+.navbar a:hover{
+    background-color: var(--extra-color);
+    transition: 1s;
 }
 @media (max-width:500px){
     .container{
         display: grid;
-        height: 100vh;
+        min-height: 100vh;
         grid-template-columns: 1% 1fr 1%;
-        grid-auto-rows: auto;
+        grid-template-rows: repeat(1fr, auto);
         grid-template-areas:
         ". header ."
         ". nav ."
-        ". main ."
-        ". aisde ."
+        ". main1 ."
+        ". main2 ."
+        ". main3 ."
+        ". aside ."
         ". aside2 ."
         ". footer .";
     }
-    header{
-        background-color: darkblue;
-    }
-    nav{
-        background-color: aquamarine;
-    }
-    main{
-        background-color: blue;
-    }
-    aside{
-        background-color: blue;
-    }
-    #asidetwo{
-        grid-area: aside2;
-        background-color: brown;
-    }
-
 }
