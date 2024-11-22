@@ -12,9 +12,13 @@
     ". aside2 main3 main3 ."
     ". footer footer footer .";
 }
+
+
 body{
     background-color: var(--primary-color);
 }
+
+
 header{
     grid-area: header;
     background-color: var(--primary-color);
@@ -22,14 +26,17 @@ header{
     text-align: center;
     color: var(--text-color);
 }
+
 nav{
     grid-area: nav;
-    background-color: var(--extra-color);
+    background-color: var(--accent-color);
 }
+
 aside{
     grid-area: aside;
     background-color: var(--primary-color);
 }
+
 #asidetwo{
     grid-area: aside2;
     background-color:  var(--primary-color);
@@ -37,19 +44,20 @@ aside{
 
 #mainone{
     grid-area: main1;
-    background-color: var(--extra-color);
-    border-radius: 30px;
+    background-color: var(--accent-color);
+    border-radius: 15px;
     font-size: 40px;
     color: var(--text-color);
     margin-right: 20px;
     margin-bottom: 55px;
 }
+
 #sectionmain{
     grid-area: main2;
-    background-color: var(--extra-color);
+    background-color: var(--accent-color);
     border-radius: 50px;
-   
 }
+
 #sectionmain{
     display: flex;
     align-content: flex-start;
@@ -61,21 +69,26 @@ aside{
    border-radius: 50px;
    
 }
+
 #sectionmaintwo{
     grid-area: main3;
-    background-color: var(--extra-color);
-    border-radius: 30px;
+    background-color: var(--accent-color);
+    border-radius: 120px;
     margin-top: 25px;
+    margin-bottom: 120px;
 }
+
 footer{
     grid-area: footer;
     background-color: var(--primary-color);
 }
+
 .navbar ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 .navbar a{
     color: var(--text-color);
     text-decoration: none;
@@ -83,25 +96,55 @@ footer{
     display: block;
     text-align: center;
 }
+
 .navbar li{
     float: left;
     font-size: 50px;
     padding-left: 60px;
 }
+
 .navbar ul{
     list-style-type: none;
     overflow: hidden;
 }
+
 .navbar a:hover{
     background-color: var(--extra-color);
     transition: 1s;
 }
+
+
+
+#mainpett{
+    grid-area: main1;
+    background-color: aqua;
+}
+#mainpett{
+
+}
+#mainpett img{
+    width: ;
+}
+
+#mainptvå{
+    grid-area: main2;
+    background-color: black;
+}
+
+#mainptre{
+    grid-area: main3;
+    background-color: brown;
+}
+
+
+
 @media (max-width:500px){
     .container{
         display: grid;
         min-height: 100vh;
+        min-width: 100vw;
         grid-template-columns: 1% 1fr 1%;
-        grid-template-rows: repeat(1fr, auto);
+        grid-template-rows: repeat(auto);
         grid-template-areas:
         ". header ."
         ". nav ."
@@ -111,5 +154,41 @@ footer{
         ". aside ."
         ". aside2 ."
         ". footer .";
+    }
+    header{
+        max-width: 95vw;
+    }
+    nav{
+        max-width: 95vw;
+    }
+    .navbar li{
+        font-size: 30px;
+        padding: 0;
+    }
+    #mainone{
+        font-size: 25px;
+        margin-top: 10px;
+        width: 95vw;
+        border-radius: 0;
+    }
+    #sectionmain{
+        max-width: 95vw;
+        border-radius: 0;
+    }
+    #sectionmain img{
+        border-radius: 0;
+    }
+    #sectionmaintwo{
+        width: 95VW;
+        border-radius: 0;
+    }
+    aside{
+        max-width: 95vw;
+    }
+    #asidetwo{
+        max-width: 95vw;
+    }
+    footer{
+        max-width: 95vw;
     }
 }
