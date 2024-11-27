@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="design.css">
+
 </head>
 <body>
-    <div class="container">
+    <div class="container-kontaktaoss">
         <header>
-            <p>Muggverk uf</p>
+            <p>Kontakta oss</p>
         </header>
         <nav class="navbar">
             <ul>
@@ -18,14 +19,25 @@
                 <li><a href="Kontaktaoss.html">Kontakta oss</a></li>
             </ul>
         </nav>
-        <aside>da</aside>
-        <div id="asidetwo"></div>
-        <div id="mainone">muggverk uf vi gör din mugg</div>
-        <div id="sectionmain">
-            <img id="muggverkstad" src="bilder/logotype.png" alt="">
+        <div id="mainkontakt">
+            <form id="Kontaktform" action="/action_page.php" method="post">
+
+                <p>Skicka meddelanden till oss</p>
+
+                <h2>förnamn</h2>
+                <label for="firsname"></label>
+                <input id="firsname" type="text">
+
+                <h3>Efternamn</h3>
+                <label for="lastname"></label>
+                <input id="lastname" type="text">
+
+                <h3>meddelanden till oss</h3>
+                <textarea name="message" rows="7" cols="20">skriv ditt meddelanden här</textarea>
+
+
+            </form>
         </div>
-        <div id="sectionmaintwo">adawd</div>
-        <footer>wdawda</footer>
 
     </div>
 </body>

@@ -3,17 +3,33 @@
     display: grid;
     min-height: 100vh;
     grid-template-columns: 1% 1fr 1fr 1fr 1%;
-    grid-template-rows: 1fr 0.6fr 0.6fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr 0.6fr 3fr 3fr 1fr;
     grid-template-areas:
     ". header header header ."
     ". nav nav nav ."
-    ". . . . ."
     ". aside main1 main2 ."
     ". aside2 main3 main3 ."
     ". footer footer footer .";
 }
+.container-kontaktaoss{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1% 2fr 1fr 1%;
+    grid-template-rows: 1fr 0.6fr 6fr 1fr;
+    grid-template-areas: 
+    ". header header ."
+    ". nav nav ."
+    ". maink sidebar ."
+    ". footer footer .";
 
+}
+#mainkontakt{
+    grid-area: maink;
+    border: var(--extra-color) dotted 10px;
+}
+#kontaktform{
 
+}
 body{
     background-color: var(--primary-color);
 }
@@ -50,6 +66,7 @@ aside{
     color: var(--text-color);
     margin-right: 20px;
     margin-bottom: 55px;
+    margin-top: 50px;
 }
 
 #sectionmain{
