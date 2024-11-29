@@ -21,24 +21,35 @@
         </nav>
         <div id="mainkontakt">
             <form id="Kontaktform" action="/action_page.php" method="post">
-
+                <div id="kontaktfix">
                 <p>Skicka meddelanden till oss</p>
 
-                <h2>förnamn</h2>
-                <label for="firsname"></label>
-                <input id="firsname" type="text">
+                    <h1>Förnamn</h1>
+                    <label for="firsname"></label>
+                    <input id="firsname" type="text">
 
-                <h3>Efternamn</h3>
-                <label for="lastname"></label>
-                <input id="lastname" type="text">
+                    <h2>Efternamn</h2>
+                    <label for="lastname"></label>
+                    <input id="lastname" type="text">
 
-                <h3>meddelanden till oss</h3>
-                <textarea name="message" rows="7" cols="20">skriv ditt meddelanden här</textarea>
+                    <h4>Epost address</h4>
+                    <label for="Epost"></label>
+                    <input id="Epost" type="text">
 
+                    <h3>Meddelanden till oss</h3>
+                    <textarea name="message" rows="20" cols="50" id="meddelanden" placeholder="skriv ditt meddelanden här"></textarea>
+
+                    <br></br>
+
+                    <input type="submit" name="skicka" value="skicka" id="skicka">
+
+                </div>
 
             </form>
-        </div>
 
+            
+        </div>
+        <div id="sidebar"><img src="bilder/logotype.png" alt=""></div>
     </div>
 </body>
 </html>

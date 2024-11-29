@@ -25,11 +25,62 @@
 }
 #mainkontakt{
     grid-area: maink;
-    border: var(--extra-color) dotted 10px;
+    background-color: var(--accent-color);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    margin-right: 500px;
+    border: solid 5px var(--text-color);
+    
 }
-#kontaktform{
 
+
+#kontaktfix{
+    margin-left: 30px;
+    margin-top: 30px;
 }
+#kontaktfix p{
+    font-size: 30px;
+    color: var(--text-color);
+    
+}
+#kontaktfix h1{
+    font-size: 20px;
+    color: var(--text-color);
+}
+#kontaktfix h2{
+    font-size: 20px;
+    color: var(--text-color);
+}
+#kontaktfix h3{
+    font-size: 20px;
+    color: var(--text-color);
+}
+#kontaktfix h4{
+    font-size: 20px;
+    color: var(--text-color);
+}
+#meddelanden{
+    resize: none;
+}
+#skicka{
+    font-size: 30px;
+}
+#skicka:hover{
+    background-color: var(--sickain-color);
+    transition: background-color 5ms;
+}
+#sidebar{
+    grid-area: sidebar;   
+}
+#sidebar img{
+    width: 300px;
+    margin-left: 230px;
+    margin-top: 70px;
+    border-radius: 50px;
+    
+}
+
 body{
     background-color: var(--primary-color);
 }
@@ -73,6 +124,7 @@ aside{
     grid-area: main2;
     background-color: var(--accent-color);
     border-radius: 50px;
+    margin-top: 20px;
 }
 
 #sectionmain{
