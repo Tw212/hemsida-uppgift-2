@@ -9,7 +9,7 @@
     ". nav nav nav ."
     ". aside main1 main2 ."
     ". aside2 main3 main3 ."
-    ". footer footer footer .";
+    "footer footer footer footer footer";
 }
 .container-kontaktaoss{
     display: grid;
@@ -65,10 +65,13 @@
 }
 #skicka{
     font-size: 30px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px var(--text-color);
 }
 #skicka:hover{
     background-color: var(--sickain-color);
     transition: background-color 5ms;
+
 }
 #sidebar{
     grid-area: sidebar;   
@@ -78,6 +81,7 @@
     margin-left: 230px;
     margin-top: 70px;
     border-radius: 50px;
+    box-shadow: 10px 10px 10px var(--accent-color);
     
 }
 
@@ -149,7 +153,14 @@ aside{
 
 footer{
     grid-area: footer;
-    background-color: var(--primary-color);
+    background-color: var(--text-color);
+}
+footer li{
+    color: var(--primary-color);
+    font-size: 2em;
+    list-style-type: none;
+    padding-left: 30px;
+    padding-bottom: 20px;
 }
 
 .navbar ul{
@@ -192,7 +203,7 @@ footer{
 
 }
 #mainpett img{
-    width: ;
+    width: 20px;
 }
 
 #mainptvå{
