@@ -33,7 +33,16 @@
     border: solid 5px var(--text-color);
     
 }
-
+.menubtn{
+ font-size: 50px;
+ color: var(--text-color);
+ float: left;
+ cursor: pointer;
+ display: block;
+}
+#menu{
+    display: none;
+}
 
 #kontaktfix{
     margin-left: 30px;
