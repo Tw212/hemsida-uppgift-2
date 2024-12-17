@@ -107,6 +107,22 @@ aside{
     grid-area: aside;
     background-color: var(--primary-color);
 }
+#omdome ul{
+    list-style-type:none;
+    color:var(--text-color);
+}
+#omdome{
+    font-size: 50px;
+    color: var(--text-color);
+   
+}
+#omdome ol li{
+    list-style-type:none;
+    padding: 30px;
+    border: 1px solid var(--accent-color);
+    margin-right: 70px;
+}
+
 
 #asidetwo{
     grid-area: aside2;
@@ -228,7 +244,7 @@ footer li{
 
 
 
-@media (max-width:500px){
+@media (max-width:1100px){
     .container{
         display: grid;
         max-height: 100vh;
@@ -272,12 +288,13 @@ footer li{
     #mainone{
         font-size: 25px;
         margin-top: 10px;
-        width: 95vw;
+        max-width: 95vw;
         border-radius: 10px;
         margin-bottom: 80px;
         margin-top: 20px;
         padding-top: 20px;
         padding-left: 10px;
+        height: 100px;
         
     }
     #meddelanden{
@@ -286,15 +303,21 @@ footer li{
         
     }
     #sidebar{
+        grid-area: sidebar;
         max-width: 95vw;
     }
     #sidebar img{
+        grid-area: sidebar;
         text-align: center;
+        padding-right: 50px;
+        
+
     }
 
     #sectionmain{
-        max-width: 95vw;
+        width: 300px;
         border-radius: 20px;
+        height: 300px;
         
     }
     #sectionmain img{
@@ -302,8 +325,14 @@ footer li{
     
     }
     #sectionmaintwo{
-        width: 95VW;
+        max-width: 95VW;
         border-radius: 0;
+        height: 100px;
+        padding-top: 20px;
+        padding-left: 20px;
+        border-radius: 20px;
+        margin-left: 100px;
+        
     }
     aside{
         max-width: 95vw;
