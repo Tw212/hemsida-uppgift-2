@@ -228,11 +228,32 @@ footer li{
     height: 100%;
     
 }
+#mainpett li img{
+    height: 244px;
+}
+#pside ol{
+    border: 2px solid var(--accent-color);
+}
+#mainpett ol{
+    border: 2px solid var(--accent-color);
+}
+#pside li{
+    list-style-type: none;
+    font-size: 20px;
+    padding: 20px;
+}
+#mainpett li{
+    list-style-type: none;
+    font-size: 20px;
+    padding: 20px;
+}
+
 #mainpett{
     grid-area: main1;
  
     margin-top: 50px;
 }
+
 
 #mainpett img{
     width: 100%;
@@ -253,7 +274,7 @@ footer li{
 
 
 
-@media (max-width:1100px){
+@media (max-width:1500px){
     .container{
         display: grid;
         max-height: 100vh;
@@ -358,5 +379,9 @@ footer li{
     }
     #mainpett{
         grid-area: main2;
+    }
+
+    #mainpett img{
+        height: 800px !important;
     }
 }
