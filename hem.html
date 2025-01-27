@@ -6,20 +6,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="design.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="funktioner.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 </head>
 
 <body>
     <div class="container">
-        <header>
+        <header id="hed">
             <p>Muggverk uf</p>
         </header>
-        <nav class="navbar">
-                    <ul>
-                        <li><a href="hem.html">Hem</a></li>
-                        <li><a href="produkt.html">Produkter</a></li>
-                        <li><a href="Kontaktaoss.html">Kontakta oss</a></li>
-                    </ul> 
+        
+        <button id="navknapp" onclick="navshow()"><i class='bx bx-menu'></i></button>
+        <nav class="navbar" id="navjs">
+            <ul>
+                <li><a href="hem.html">Hem</a></li>
+                <li><a href="produkt.html">Produkter</a></li>
+                <li><a href="Kontaktaoss.html">Kontakta oss</a></li>
+            </ul>
         </nav>
+        
         <aside>
             <div id="omdome">
                 <ul>
@@ -38,7 +44,7 @@
             <img id="muggverkstad" src="bilder/logotype.png" alt="">
         </div>
         <div id="sectionmaintwo">Bästa muggarna</div>
-        <footer> 
+        <footer id="fot"> 
             <li>Muggverk@gmail.com</li>
             <li>Teknikum</li>
         </footer>
